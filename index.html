@@ -7,8 +7,8 @@
 <meta name="description" content="Pepijn Baggen. MSc Artificial Intelligence student at the University of Amsterdam and AI DevOps Engineer at Leiden University.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=3">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 
@@ -26,16 +26,20 @@
 <main id="top">
 
   <section class="hero">
-    <h1>Pepijn Baggen</h1>
-    <p class="lead">MSc Artificial Intelligence student at the University of Amsterdam and AI DevOps Engineer at Leiden University.</p>
-    <p class="place">Amsterdam, the Netherlands</p>
-    <p class="linkrow">
-      <a href="https://www.linkedin.com/in/pepijn-baggen-9a0131227/">LinkedIn</a>
-      <span aria-hidden="true">/</span>
-      <a href="https://github.com/PepBaggen">GitHub</a>
-      <span aria-hidden="true">/</span>
-      <a href="https://theses.liacs.nl/pdf/2025-2026-BaggenPPepijn.pdf">Bachelor thesis</a>
-    </p>
+    <div class="intro">
+      <h1>Pepijn Baggen</h1>
+      <p class="lead">MSc Artificial Intelligence student at the University of Amsterdam and AI DevOps Engineer at Leiden University.</p>
+      <p class="interests"><span>Research interests</span> Medical image segmentation, LLM evaluation, AI safety</p>
+      <p class="place">Amsterdam, the Netherlands</p>
+      <p class="linkrow">
+        <a href="https://www.linkedin.com/in/pepijn-baggen-9a0131227/">LinkedIn</a>
+        <span aria-hidden="true">/</span>
+        <a href="https://github.com/PepBaggen">GitHub</a>
+        <span aria-hidden="true">/</span>
+        <a href="https://theses.liacs.nl/pdf/2025-2026-BaggenPPepijn.pdf">Bachelor thesis</a>
+      </p>
+    </div>
+    <img class="portrait" src="pepijn.jpg" alt="Portrait of Pepijn Baggen" width="160" height="160">
   </section>
 
   <section id="education">
@@ -127,7 +131,9 @@
     </article>
 
     <article class="entry">
-      <span class="when">2026</span>
+      <span class="when">2026
+        <img class="figure" src="paper-figure.jpg" alt="Confocal image of a neurite network next to the automatic segmentation result" width="666" height="326">
+      </span>
       <div>
         <h3>Automated Morphometric Read-outs of the Neurite Network in a Cardiac Innervation Chip with a Compact Attention U-Net</h3>
         <p class="where">Pepijn Baggen, Marthe Kaal, Verena Schwach, Lu Cao</p>
