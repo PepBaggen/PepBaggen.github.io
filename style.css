@@ -133,6 +133,26 @@ h2 {
   margin-bottom: 24px;
 }
 
+.entry.has-logo { grid-template-columns: 170px 36px 1fr; gap: 0 16px; }
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.logos img {
+  display: block;
+  width: 36px;
+  height: 36px;
+  padding: 3px;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  object-fit: contain;
+}
+
 .when {
   padding-top: 2px;
   color: var(--muted);
@@ -177,6 +197,8 @@ footer p { margin: 0; }
 
 @media (max-width: 560px) {
   .entry { grid-template-columns: 1fr; }
+  .entry.has-logo { grid-template-columns: 36px 1fr; gap: 0 12px; }
+  .entry.has-logo .when { grid-column: 1 / -1; }
   .when { padding: 0 0 2px; font-size: 13px; }
 }
 
